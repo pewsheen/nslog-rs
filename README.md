@@ -5,6 +5,7 @@ Just a small lib for using `NSLog` in rust
 This example will print `Hello World!` in terminal
 
 ```rs
+use nslog_rs::NSLog;
 use cocoa::base::nil;
 use cocoa::foundation::NSString;
 
