@@ -16,8 +16,8 @@ mod tests {
         use cocoa::base::nil;
         use cocoa::foundation::NSString;
         unsafe {
-            let fmt: id = NSString::alloc(nil).init_str("Hello %@!");
-            let va_1: id = NSString::alloc(nil).init_str("World");
+            let fmt: id = NSString::alloc(nil).init_str("Hello %@!").autorelease();
+            let va_1: id = NSString::alloc(nil).init_str("World").autorelease();
             NSLog(fmt, va_1);
         }
     }
